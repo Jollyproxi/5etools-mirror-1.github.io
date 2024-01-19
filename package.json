@@ -56,8 +56,8 @@
 		"sass": "^1.56.1",
 		"sharp": "^0.33.1",
 		"simple-git": "^3.22.0",
-		"stylelint": "^13.13.1",
-		"stylelint-config-sass-guidelines": "^8.0.0",
+		"stylelint": "^16.2.0",
+		"stylelint-config-sass-guidelines": "^11.0.0",
 		"terser": "^5.15.1",
 		"workbox-cli": "^6.5.3"
 	},
