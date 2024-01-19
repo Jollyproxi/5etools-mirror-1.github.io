@@ -136,15 +136,7 @@ class BaseParserFeature extends BaseParser {
 		}
 		handleStack();
 
-		if (!pres.length) return;
-
-		const presDeduped = [];
-		pres.forEach(pre => {
-			if (presDeduped.some(it => CollectionUtil.deepEquals(pre, it))) return;
-			presDeduped.push(pre);
-		});
-
-		state.entity.prerequisite = presDeduped;
+		if (pres.length) state.entity.prerequisite = pres;
 	}
 }
 
