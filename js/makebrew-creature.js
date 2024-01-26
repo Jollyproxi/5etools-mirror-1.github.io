@@ -2353,11 +2353,6 @@ class CreatureBuilder extends Builder {
 				mode: "frequency",
 			},
 			{
-				display: "\uD835\uDC65/month (/each) spells",
-				type: "monthly",
-				mode: "frequency",
-			},
-			{
 				display: "\uD835\uDC65/year (/each) spells",
 				type: "yearly",
 				mode: "frequency",
@@ -2444,7 +2439,6 @@ class CreatureBuilder extends Builder {
 			if (trait.daily) handleFrequency("daily");
 			if (trait.rest) handleFrequency("rest");
 			if (trait.weekly) handleFrequency("weekly");
-			if (trait.monthly) handleFrequency("monthly");
 			if (trait.yearly) handleFrequency("yearly");
 			if (trait.spells) {
 				Object.entries(trait.spells).forEach(([k, v]) => {
@@ -2545,7 +2539,6 @@ class CreatureBuilder extends Builder {
 							case "daily": return "/Day";
 							case "rest": return "/Rest";
 							case "weekly": return "/Week";
-							case "monthly": return "/Month";
 							case "yearly": return "/Year";
 						}
 					})();
